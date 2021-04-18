@@ -17,15 +17,18 @@
   position: fixed;
 }
 
-.nav {
+.info {
   display: flex;
   flex-direction: row;
+  padding: 10px 10px 13px 10px;
 }
 
 .links {
   text-decoration: none;
   color: #4a4a4a;
   font-size: 16px;
+  text-transform: uppercase;
+  list-style: none;
 }
 
 .main {
@@ -35,36 +38,38 @@
   height: 100vh;
   color: #ffffff;
   text-align: center;
-  font-size: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-img {
+.title {
   width: 155px;
   margin-top: 10px;
   margin-bottom: 10px;
-  
 }
 
 h1 {
-    text-transform: capitalize;
+  text-transform: capitalize;
+  word-spacing: 100vw;
+  font-weight: bold;
+  font-size: 30px;
 }
 
+/*TABLEY Y DESKTOP*/
 
-@media all and (min-width:768px) {
-    .header {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 20px;
-        padding-top: px;
-        padding-right: 30px;
-        padding-left: 30px;
-        
-    }
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 
-    h1 {
-        font-size: 40px;
-    }
+  h1 {
+    font-size: 40px;
+  }
+}
